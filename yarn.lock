@@ -4796,9 +4796,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-project@workspace:projects/web":
+"react-project@workspace:projects/forum/web":
   version: 0.0.0-use.local
-  resolution: "react-project@workspace:projects/web"
+  resolution: "react-project@workspace:projects/forum/web"
   dependencies:
     "@eslint/js": "npm:^9.30.1"
     "@hookform/resolvers": "npm:^5.2.0"

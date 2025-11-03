@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "type": "module",
     "private": true,
-    "packageManager": "yarn@4.9.0",
+    "packageManager": "yarn@4.9.2",
     "workspaces": {
         "packages": [
             "packages/*",
