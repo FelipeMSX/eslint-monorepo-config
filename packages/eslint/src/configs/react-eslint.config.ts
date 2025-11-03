@@ -9,7 +9,10 @@ export const reactConfig = defineConfig([
     ignoredFolders,
     {
         files: ["**/*.tsx", "**/*.jsx"],
-        extends: [jsxA11Y.flatConfigs.recommended, reactHooks.configs["recommended-latest"]],
+        extends: [
+            jsxA11Y.flatConfigs.recommended,
+            reactHooks.configs["recommended-latest"],
+        ],
         plugins: {
             react,
         },

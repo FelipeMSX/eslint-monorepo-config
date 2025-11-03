@@ -15,6 +15,10 @@ export function exemploImportOrder() {
     // Usando fs para checar se o arquivo existe
     const existe = fs.existsSync(caminho);
     // Usando React para criar um elemento
-    const elemento = React.createElement("div", null, `Arquivo existe: ${existe}`);
+    const elemento = React.createElement(
+        "div",
+        null,
+        `Arquivo existe: ${existe}`,
+    );
     return { valor, setValor, caminho, existe, elemento };
 }

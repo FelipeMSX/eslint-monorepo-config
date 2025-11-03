@@ -34,13 +34,13 @@ export const utilsConfig = defineConfig([
             "import/order": [
                 "error",
                 {
-                    "groups": [
+                    groups: [
                         ["builtin", "external"], // node e libs externas (fs, react, lodash)
                         ["internal"], // imports com alias do projeto (@/lib/..., etc.)
                         ["parent", "sibling", "index"], // relativos (../, ./, index.ts)
                         ["type"], // imports de tipos
                     ],
-                    "pathGroups": [
+                    pathGroups: [
                         {
                             pattern: "react",
                             group: "external",
@@ -51,10 +51,10 @@ export const utilsConfig = defineConfig([
                             group: "internal",
                         },
                     ],
-                    "pathGroupsExcludedImportTypes": ["react"],
+                    pathGroupsExcludedImportTypes: ["react"],
 
                     "newlines-between": "always", // linha em branco entre grupos
-                    "alphabetize": { order: "asc", caseInsensitive: true }, // ordenação alfabética dentro do grupo
+                    alphabetize: { order: "asc", caseInsensitive: true }, // ordenação alfabética dentro do grupo
                 },
             ],
         },
