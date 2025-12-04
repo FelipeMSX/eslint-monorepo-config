@@ -11,7 +11,7 @@ export const reactConfig = defineConfig([
         files: ["**/*.tsx", "**/*.jsx"],
         extends: [
             jsxA11Y.flatConfigs.recommended,
-            reactHooks.configs["recommended-latest"],
+            reactHooks.configs.flat["recommended-latest"],
         ],
         plugins: {
             react,
