@@ -4,7 +4,7 @@ import * as prettier from "eslint-plugin-prettier";
 
 import { ignoredFolders } from "../internal-utils";
 
-export const jsonConfig = defineConfig([
+export const jsonRules = defineConfig([
     ignoredFolders,
     {
         files: ["**/*.json", "**/*.jsonc"],

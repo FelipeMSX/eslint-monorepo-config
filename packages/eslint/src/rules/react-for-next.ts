@@ -5,7 +5,7 @@ import reactHooks from "eslint-plugin-react-hooks";
 
 import { ignoredFolders } from "../internal-utils";
 
-export const reactConfig = defineConfig([
+export const reactForNextRules = defineConfig([
     ignoredFolders,
     {
         files: ["**/*.tsx", "**/*.jsx"],
@@ -42,6 +42,7 @@ export const reactConfig = defineConfig([
             "react/react-in-jsx-scope": "off",
             "react/jsx-sort-props": "off",
             "jsx-a11y/interactive-supports-focus": "warn",
+            "exhaustive-deps": "error",
         },
     },
 ]);
