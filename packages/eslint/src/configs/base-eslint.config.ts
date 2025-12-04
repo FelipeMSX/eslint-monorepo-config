@@ -2,7 +2,7 @@ import * as eslint from "@eslint/js";
 import { defineConfig } from "eslint/config";
 import tseslint from "typescript-eslint";
 
-import { ignoredFolders } from "../shared";
+import { ignoredFolders } from "../internal";
 
 export const baseConfig = defineConfig([
     ignoredFolders,

@@ -2,7 +2,7 @@ import { defineConfig } from "eslint/config";
 import jsoncPlugin from "eslint-plugin-jsonc";
 import * as prettier from "eslint-plugin-prettier";
 
-import { ignoredFolders } from "../shared";
+import { ignoredFolders } from "../internal";
 
 export const jsonConfig = defineConfig([
     ignoredFolders,

@@ -2,7 +2,7 @@ import { defineConfig } from "eslint/config";
 import * as eslintPluginImport from "eslint-plugin-import";
 import * as prettier from "eslint-plugin-prettier";
 
-import { ignoredFolders } from "../shared";
+import { ignoredFolders } from "../internal";
 
 export const utilsConfig = defineConfig([
     ignoredFolders,
