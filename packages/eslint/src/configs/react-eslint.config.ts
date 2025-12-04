@@ -3,7 +3,7 @@ import jsxA11Y from "eslint-plugin-jsx-a11y";
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 
-import { ignoredFolders } from "../internal";
+import { ignoredFolders } from "../internal-utils";
 
 export const reactConfig = defineConfig([
     ignoredFolders,
