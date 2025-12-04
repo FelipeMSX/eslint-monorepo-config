@@ -30,31 +30,30 @@ export const utilsConfig = defineConfig([
                     tabWidth: 4,
                 },
             ],
-            // Ordenação de imports
             "import/order": [
                 "error",
                 {
                     groups: [
-                        ["builtin", "external"], // node e libs externas (fs, react, lodash)
-                        ["internal"], // imports com alias do projeto (@/lib/..., etc.)
-                        ["parent", "sibling", "index"], // relativos (../, ./, index.ts)
-                        ["type"], // imports de tipos
+                        ["builtin", "external"], // node and external libs (fs, react, lodash)
+                        ["internal"], // imports with project alias (@/lib/..., etc.)
+                        ["parent", "sibling", "index"], // relative imports (../, ./, index.ts)
+                        ["type"], // type imports
                     ],
                     pathGroups: [
                         {
                             pattern: "react",
                             group: "external",
-                            position: "before", // react sempre primeiro
+                            position: "before", // react always first
                         },
                         {
-                            pattern: "@/**", // se você usa paths do tsconfig
+                            pattern: "@/**", // if you use tsconfig paths
                             group: "internal",
                         },
                     ],
                     pathGroupsExcludedImportTypes: ["react"],
 
-                    "newlines-between": "always", // linha em branco entre grupos
-                    alphabetize: { order: "asc", caseInsensitive: true }, // ordenação alfabética dentro do grupo
+                    "newlines-between": "always", // blank line between groups
+                    alphabetize: { order: "asc", caseInsensitive: true }, // alphabetical order within the group
                 },
             ],
         },
