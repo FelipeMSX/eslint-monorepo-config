@@ -5,4 +5,6 @@ export const ignoredFolders = globalIgnores([
     "**/dist/**",
     "**/.next/**",
     "**/build/**",
+    "**/out/**",
+    "next-env.d.ts",
 ]);

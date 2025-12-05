@@ -12,6 +12,8 @@ export const reactRules = defineConfig([
         extends: [
             jsxA11Y.flatConfigs.recommended,
             reactHooks.configs.flat["recommended-latest"],
+            react.configs.flat["recommended"],
+            react.configs.flat["jsx-runtime"],
         ],
         plugins: {
             react,
@@ -25,7 +27,6 @@ export const reactRules = defineConfig([
                 navigator: true,
             },
             parserOptions: {
-                projectService: true,
                 ecmaFeatures: {
                     jsx: true,
                 },

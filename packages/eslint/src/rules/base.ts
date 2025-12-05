@@ -13,7 +13,8 @@ export const baseRules = defineConfig([
             ecmaVersion: 2022,
             sourceType: "module",
             parserOptions: {
-                projectService: true,
+                project: ["../../../../tsconfig.json"],
+                tsconfigRootDir: import.meta.dirname,
             },
         },
 
