@@ -14,9 +14,9 @@ export function DemoComponent({ title, description }: Props) {
         // eslint-disable-next-line no-console
         console.log("DemoComponent mounted", state);
         if (state === "initialized") {
-            // eslint-disable-next-line react-hooks/set-state-in-effect
             setState("mounted");
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
