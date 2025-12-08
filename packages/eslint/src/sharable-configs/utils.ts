@@ -4,7 +4,7 @@ import * as prettier from "eslint-plugin-prettier";
 
 import { ignoredFolders } from "../internal-utils";
 
-export const utilsRules = defineConfig([
+export const utilsSharableConfig = defineConfig([
     ignoredFolders,
     {
         files: ["**/*.ts", "**/*.js", "**/*.tsx", "**/*.jsx"],

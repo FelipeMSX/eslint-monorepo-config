@@ -5,7 +5,7 @@ import reactHooks from "eslint-plugin-react-hooks";
 
 import { ignoredFolders } from "../internal-utils";
 
-export const reactRules = defineConfig([
+export const reactSharableConfig = defineConfig([
     ignoredFolders,
     {
         files: ["**/*.tsx", "**/*.jsx"],

@@ -1,2 +1,2 @@
-export * from "./configs/common";
-export * from "./configs/next";
+export * from "./rules/global";
+export * from "./rules/next";

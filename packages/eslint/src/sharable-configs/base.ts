@@ -4,7 +4,7 @@ import tseslint from "typescript-eslint";
 
 import { ignoredFolders } from "../internal-utils";
 
-export const baseRules = defineConfig([
+export const baseSharableConfig = defineConfig([
     ignoredFolders,
     {
         files: ["**/*.ts", "**/*.js", "**/*.tsx", "**/*.jsx"],

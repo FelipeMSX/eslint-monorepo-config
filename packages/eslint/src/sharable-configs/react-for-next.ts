@@ -3,7 +3,7 @@ import { defineConfig } from "eslint/config";
 
 import { ignoredFolders } from "../internal-utils";
 
-export const reactForNextRules = defineConfig([
+export const reactForNextSharableConfig = defineConfig([
     ignoredFolders,
     {
         files: ["**/*.tsx", "**/*.jsx"],

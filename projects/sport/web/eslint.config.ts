@@ -1,3 +1,3 @@
-import { nextConfig } from "@monorepo/eslint";
+import { nextRules } from "@monorepo/eslint";
 
-export default nextConfig;
+export default nextRules;
